@@ -10,7 +10,7 @@ int lastGlobalIndex = 0,start = 0, end = 0, undosToExecute = 0, undosToAdd = 0, 
 char **indexes;
 char *currentCommand;
 char *inputBuffer;
-char ch, ch2;
+char firstCharInInputCommand, secondCharInInputCommand;
 
 /**********************************************************
                         DATA TYPES
@@ -274,19 +274,19 @@ int parseInputWithTracking(){
         currentCommand = strtok(NULL, "\n");
         if(currentCommand == NULL || currentCommand[0] == 'q')
             return 1;
-        sscanf(currentCommand, "%d%c%d%c ", &start , &ch , &end , &ch2);
-        if (ch == 'u'){
+        sscanf(currentCommand, "%d%c%d%c ", &start , &firstCharInInputCommand , &end , &secondCharInInputCommand);
+        if (firstCharInInputCommand == 'u'){
             undosToExecute = undosToExecute + start;
             if(undosToExecute>undosToAdd+redosToExecute)
                 undosToExecute = undosToAdd+redosToExecute;
         }
-        else if (ch == 'r'){
+        else if (firstCharInInputCommand == 'r'){
             redosToExecute = redosToExecute + start;
             if(redosToExecute>(redosToAdd+undosToExecute) )
                 redosToExecute = (redosToAdd+undosToExecute);
         }
         else {
-            if (ch2 == 'c') {
+            if (secondCharInInputCommand == 'c') {
                 executeUndoRedo(0);
                 if(redosToAdd>0) {
                     topRedo=NULL;
@@ -294,7 +294,7 @@ int parseInputWithTracking(){
                 }
                 undosToAdd = undosToAdd +1;
                 change(start, end);
-            } else if (ch2 == 'p') {
+            } else if (secondCharInInputCommand == 'p') {
                 executeUndoRedo(1);
                 print(start, end);
             }
@@ -320,16 +320,16 @@ int parseInput(int val){
     currentCommand = val ? strtok(inputBuffer, "\n") : strtok(NULL, "\n");
     if(currentCommand == NULL || currentCommand[0] == 'q')
         return 1;
-    int numberOfCharacters = sscanf(currentCommand, "%d%c%d%c" , &start , &ch , &end , &ch2);
+    int numberOfCharacters = sscanf(currentCommand, "%d%c%d%c" , &start , &firstCharInInputCommand , &end , &secondCharInInputCommand);
     if(numberOfCharacters==2) {
-        if ( undosToAdd > 0 && ch == 'u' ) {
+        if ( undosToAdd > 0 && firstCharInInputCommand == 'u' ) {
             undosToExecute = undosToExecute + start;
             if (undosToExecute > undosToAdd)
                 undosToExecute = undosToAdd;
             performActionAfterParsing = parseInputWithTracking();
             return performActionAfterParsing ? 1 : 2;
         }
-        else if(redosToAdd>0 &&  ch == 'r')
+        else if(redosToAdd>0 &&  firstCharInInputCommand == 'r')
         {
             redosToExecute = redosToExecute + start;
             if(redosToExecute>redosToAdd)
@@ -362,13 +362,13 @@ void handleInput(){
         if (performActionAfterParsing == 1)
             return;
         else if (performActionAfterParsing != 2) {
-            if (ch2 == 'p')
+            if (secondCharInInputCommand == 'p')
                 print(start, end);
-            else if(ch2 == 'c' || ch2 == 'd') {
+            else if(secondCharInInputCommand == 'c' || secondCharInInputCommand == 'd') {
                 undosToAdd++;
-                if (ch2 == 'c')
+                if (secondCharInInputCommand == 'c')
                     change(start, end);
-                else if (ch2 == 'd')
+                else if (secondCharInInputCommand == 'd')
                     delete(start, end);
                 if (redosToAdd > 0) {
                     topRedo = NULL;
