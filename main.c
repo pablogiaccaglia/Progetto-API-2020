@@ -1,6 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include<string.h>
+
+/**********************************************************
+                        CONSTANTS
+**********************************************************/
+#define INPUT_SIZE 1000000000
+#define ALLOC_INCREMENT 500
+
+/**********************************************************
+                        COMMAND CHARACTERS
+**********************************************************/
+#define QUIT_C 'q'   /* quit character */
+#define CHANGE_C 'c' /* change character */
+#define DELETE_C 'd' /* delete character */
+#define PRINT_C 'p'  /* print character */
+#define UNDO_C 'u'   /* undo character */
+#define REDO_C 'r'   /* redo character */
 
 /**********************************************************
                         GLOBAL VARIABLES
@@ -73,9 +89,9 @@ void redoAction(int numberOfRedosToExecute){
     for (int i = 0 ; i<numberOfRedosToExecute; i++)
     {
         pop = popRedo();
-        if(pop->commandIdentifier == 'c')
+        if(pop->commandIdentifier == CHANGE_C)
             redoChange(pop);
-        else if(pop->commandIdentifier == 'd' && pop->fin != 0)
+        else if(pop->commandIdentifier == DELETE_C && pop->fin != 0)
             redoDelete(pop);
     }
     redosToAdd = redosToAdd - numberOfRedosToExecute;
@@ -131,9 +147,9 @@ void undoAction(int numberOfUndosToExecute, int hasPrintBeenRequested){
     for (int i = 0 ; i<numberOfUndosToExecute; i++)
     {
         pop = popUndo();
-        if (pop->commandIdentifier == 'c')
+        if (pop->commandIdentifier == CHANGE_C)
             undoChange(pop);
-        else if(pop->commandIdentifier == 'd' && pop->fin!= 0)
+        else if(pop->commandIdentifier == DELETE_C && pop->fin!= 0)
             undoDelete(pop);
         if(hasPrintBeenRequested)
             pushToRedoStack(&pop);
@@ -172,11 +188,11 @@ void print(int firstIndex, int lastIndex)
 void change(int firstIndex, int lastIndex) {
     int currentIndex,k = 0;
     int newLastGlobalIndex = lastGlobalIndex;
-    pushToUndoStack(lastIndex, 'c');
+    pushToUndoStack(lastIndex, CHANGE_C);
     int numberOfLinesToAlter = lastIndex - firstIndex + 1;
     if(lastIndex>lastGlobalIndex) {
         newLastGlobalIndex = lastIndex;
-        indexes = realloc(indexes, (sizeof indexes * (lastGlobalIndex + 500)));
+        indexes = realloc(indexes, (sizeof indexes * (lastGlobalIndex + ALLOC_INCREMENT)));
     }
     if(firstIndex>lastGlobalIndex)
     {
@@ -210,7 +226,7 @@ void delete(int firstIndex, int lastIndex) {
 
     int numberOfLinesToDelete,i = firstIndex, j=0, k;
 
-    pushToUndoStack(lastIndex, 'd');
+    pushToUndoStack(lastIndex, DELETE_C);
 
     if (firstIndex <= lastGlobalIndex && lastIndex != 0 ) {
         if(lastIndex > lastGlobalIndex)
@@ -272,21 +288,21 @@ int parseInputWithTracking(){
 
     while(1) {
         currentCommand = strtok(NULL, "\n");
-        if(currentCommand == NULL || currentCommand[0] == 'q')
+        if(currentCommand == NULL || currentCommand[0] == QUIT_C)
             return 1;
         sscanf(currentCommand, "%d%c%d%c ", &start , &firstCharInInputCommand , &end , &secondCharInInputCommand);
-        if (firstCharInInputCommand == 'u'){
+        if (firstCharInInputCommand == UNDO_C){
             undosToExecute = undosToExecute + start;
             if(undosToExecute>undosToAdd+redosToExecute)
                 undosToExecute = undosToAdd+redosToExecute;
         }
-        else if (firstCharInInputCommand == 'r'){
+        else if (firstCharInInputCommand == REDO_C){
             redosToExecute = redosToExecute + start;
             if(redosToExecute>(redosToAdd+undosToExecute) )
                 redosToExecute = (redosToAdd+undosToExecute);
         }
         else {
-            if (secondCharInInputCommand == 'c') {
+            if (secondCharInInputCommand == CHANGE_C) {
                 executeUndoRedo(0);
                 if(redosToAdd>0) {
                     topRedo=NULL;
@@ -294,7 +310,7 @@ int parseInputWithTracking(){
                 }
                 undosToAdd = undosToAdd +1;
                 change(start, end);
-            } else if (secondCharInInputCommand == 'p') {
+            } else if (secondCharInInputCommand == PRINT_C) {
                 executeUndoRedo(1);
                 print(start, end);
             }
@@ -318,18 +334,18 @@ int parseInputWithTracking(){
 int parseInput(int val){
     int performActionAfterParsing;
     currentCommand = val ? strtok(inputBuffer, "\n") : strtok(NULL, "\n");
-    if(currentCommand == NULL || currentCommand[0] == 'q')
+    if(currentCommand == NULL || currentCommand[0] == QUIT_C)
         return 1;
     int numberOfCharacters = sscanf(currentCommand, "%d%c%d%c" , &start , &firstCharInInputCommand , &end , &secondCharInInputCommand);
     if(numberOfCharacters==2) {
-        if ( undosToAdd > 0 && firstCharInInputCommand == 'u' ) {
+        if ( undosToAdd > 0 && firstCharInInputCommand == UNDO_C ) {
             undosToExecute = undosToExecute + start;
             if (undosToExecute > undosToAdd)
                 undosToExecute = undosToAdd;
             performActionAfterParsing = parseInputWithTracking();
             return performActionAfterParsing ? 1 : 2;
         }
-        else if(redosToAdd>0 &&  firstCharInInputCommand == 'r')
+        else if(redosToAdd>0 &&  firstCharInInputCommand == REDO_C)
         {
             redosToExecute = redosToExecute + start;
             if(redosToExecute>redosToAdd)
@@ -362,13 +378,13 @@ void handleInput(){
         if (performActionAfterParsing == 1)
             return;
         else if (performActionAfterParsing != 2) {
-            if (secondCharInInputCommand == 'p')
+            if (secondCharInInputCommand == PRINT_C)
                 print(start, end);
-            else if(secondCharInInputCommand == 'c' || secondCharInInputCommand == 'd') {
+            else if(secondCharInInputCommand == CHANGE_C || secondCharInInputCommand == DELETE_C) {
                 undosToAdd++;
-                if (secondCharInInputCommand == 'c')
+                if (secondCharInInputCommand == CHANGE_C)
                     change(start, end);
-                else if (secondCharInInputCommand == 'd')
+                else if (secondCharInInputCommand == DELETE_C)
                     delete(start, end);
                 if (redosToAdd > 0) {
                     topRedo = NULL;
@@ -385,8 +401,8 @@ void handleInput(){
 **********************************************************/
 
 int main() {
-    indexes = malloc(500 * sizeof(char *));
-    inputBuffer = malloc(1000000000);
+    indexes = malloc(ALLOC_INCREMENT * sizeof(char *));
+    inputBuffer = malloc( INPUT_SIZE );
     storeInput();
     handleInput();
     return 0;
