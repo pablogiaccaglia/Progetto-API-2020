@@ -1,0 +1,62 @@
+54. Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy.
+35. Everyone can be taught to sculpt: Michelangelo would have had to be taught not to. So it is with great programmers.
+55. A LISP programmer knows the value of everything, but the cost of nothing.
+80. Prolonged contact with the computer turns mathematicians into clerks and vice versa.
+79. A year spent in artificial intelligence is enough to make one believe in God.
+93. When someone says "I want a programming language in which I need only say what I wish done," give him a lollipop.
+105. You can't communicate complexity, only an awareness of it.
+55. A LISP programmer knows the value of everything, but the cost of nothing.
+74. Is it possible that software is not like anything else, that it is meant to be discarded: that the whole point is to see it as a soap bubble?
+93. When someone says "I want a programming language in which I need only say what I wish done," give him a lollipop.
+62. In computing, invariants are ephemeral.
+102. One can't proceed from the informal to the formal by formal means.
+77. The cybernetic exchange between man, computer and algorithm is like a game of musical chairs: The frantic search for balance always leaves one of the three standing ill at ease.
+107. The debate rages on: is PL/I Bachtrian or Dromedary?
+82. We are on the verge: Today our program proved Fermat's next-to-last theorem.
+88. It is not the computer's fault that Maxwell's equations are not adequate to design the electric motor.
+49. Giving up on assembly language was the apple in our Garden of Eden: Languages whose use squanders machine cycles are sinful. The LISP machine now permits LISP programmers to abandon bra and fig-leaf.
+117. It goes against the grain of modern education to teach children to program. What fun is there in making plans, acquiring discipline in organizing  thoughts,  devoting attention to detail and learning to be self-critical?
+79. A year spent in artificial intelligence is enough to make one believe in God.
+54. Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy.
+84. Motto for a research laboratory: What we work on today, others will first think of tomorrow.
+30. In programming, everything we do is a special case of something more general -- and often we know it too quickly.
+63. When we write programs that "learn", it turns out that we do and they don't.
+110. Editing is a rewording activity.
+108. Whenever two programmers meet to criticize their programs, both are silent.
+97. When a professor insists computer science is X but not Y, have compassion for his graduate students.
+55. A LISP programmer knows the value of everything, but the cost of nothing.
+60. In seeking the unattainable, simplicity only gets in the way.
+12. Recursion is the root of computation since it trades description for time.
+41. Some programming languages manage to absorb change, but withstand progress.
+3. Syntactic sugar causes cancer of the semicolon.
+83. What is the difference between a Turing machine and the modern computer?  It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak.
+120. Adapting old programs to fit new machines usually means adapting new machines to behave like old ones.
+94. Interfaces keep things tidy, but don't accelerate growth: Functions do.
+16. Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
+84. Motto for a research laboratory: What we work on today, others will first think of tomorrow.
+25. One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.
+37. The most important computer is the one that rages in our skulls and ever seeks that satisfactory external emulator. The standarization of real computers would be a disaster - and so it probably won't happen.
+24. Perhaps if we wrote programs from childhood on, as adults we'd be able to read them.
+7. It is easier to write an incorrect program than understand a correct one.
+117. It goes against the grain of modern education to teach children to program. What fun is there in making plans, acquiring discipline in organizing  thoughts,  devoting attention to detail and learning to be self-critical?
+83. What is the difference between a Turing machine and the modern computer?  It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak.
+102. One can't proceed from the informal to the formal by formal means.
+2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
+92. The computer is the ultimate polluter: its feces are indistinguishable from the food it produces.
+22. A good system can't have a weak command language.
+59. In English every word can be verbed. Would that it were so in our programming languages.
+79. A year spent in artificial intelligence is enough to make one believe in God.
+101. Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve.
+27. Once you understand how to write a program get someone else to write it.
+25. One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.
+60. In seeking the unattainable, simplicity only gets in the way.
+10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.
+62. In computing, invariants are ephemeral.
+83. What is the difference between a Turing machine and the modern computer?  It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak.
+30. In programming, everything we do is a special case of something more general -- and often we know it too quickly.
+105. You can't communicate complexity, only an awareness of it.
+49. Giving up on assembly language was the apple in our Garden of Eden: Languages whose use squanders machine cycles are sinful. The LISP machine now permits LISP programmers to abandon bra and fig-leaf.
+3. Syntactic sugar causes cancer of the semicolon.
+14. In the long run every program becomes rococo - then rubble.
+1. One man's constant is another man's variable.
+.

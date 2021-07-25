@@ -1,0 +1,102 @@
+38. Structured Programming supports the law of the excluded middle.
+70. Over the centuries the Indians developed sign language for communicating phenomena of interest. Programmers from
+109. Think of it! With VLSI we can pack 100 ENIACS in 1 sq. cm.
+31. Simplicity does not precede complexity, but follows it.
+111. Why did the Roman Empire collapse? What is Latin for office automation?
+94. Interfaces keep things tidy, but don't accelerate growth: Functions do.
+11. If you have a procedure with ten parameters, you probably missed some.
+102. One can't proceed from the informal to the formal by formal means.
+32. Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.
+63. When we write programs that "learn", it turns out that we do and they don't.
+9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+45. The goal of computation is the emulation of our synthetic abilities, not the understanding of our analytic ones.
+109. Think of it! With VLSI we can pack 100 ENIACS in 1 sq. cm.
+15. Everything should be built top-down, except the first time.
+71. Documentation is like term insurance: It satisfies because almost no one who subscribes to it depends on its benefits.
+63. When we write programs that "learn", it turns out that we do and they don't.
+66. Making something variable is easy. Controlling duration of constancy is the trick.
+15. Everything should be built top-down, except the first time.
+32. Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.
+64. Often it is the means that justify the ends: Goals advance technique and technique survives even when goal structures crumble.
+11. If you have a procedure with ten parameters, you probably missed some.
+16. Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
+13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
+75. Because of its vitality, the computing field is always in desperate need of new cliches: Banality soothes our nerves.
+114. Within a computer natural language is unnatural.
+10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.
+30. In programming, everything we do is a special case of something more general -- and often we know it too quickly.
+34. The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.
+7. It is easier to write an incorrect program than understand a correct one.
+50. When we understand knowledge-based systems, it will be as before -- except our fingertips will have been singed.
+28. Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?
+83. What is the difference between a Turing machine and the modern computer?  It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak.
+110. Editing is a rewording activity.
+79. A year spent in artificial intelligence is enough to make one believe in God.
+73. It is not a language's weakness but its strengths that control the gradient of its change: Alas, a language never escapes its embryonic sac.
+56. Software is under a constant tension. Being symbolic it is arbitrarily perfectible; but also it is arbitrarily changeable.
+23. To understand a program you must become both the machine and the program.
+45. The goal of computation is the emulation of our synthetic abilities, not the understanding of our analytic ones.
+60. In seeking the unattainable, simplicity only gets in the way.
+91. The computer reminds one of Lon Chaney -- it is the machine of a thousand faces.
+49. Giving up on assembly language was the apple in our Garden of Eden: Languages whose use squanders machine cycles are sinful. The LISP machine now permits LISP programmers to abandon bra and fig-leaf.
+75. Because of its vitality, the computing field is always in desperate need of new cliches: Banality soothes our nerves.
+12. Recursion is the root of computation since it trades description for time.
+12. Recursion is the root of computation since it trades description for time.
+52. Systems have sub-systems and sub-systems have sub-systems and so on ad infinitum - which is why we're always starting over.
+25. One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.
+83. What is the difference between a Turing machine and the modern computer?  It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak.
+109. Think of it! With VLSI we can pack 100 ENIACS in 1 sq. cm.
+104. The proof of a system's value is its existence.
+43. In software systems, it is often the early bird that makes the worm.
+15. Everything should be built top-down, except the first time.
+19. A language that doesn't affect the way you think about programming, is not worth knowing.
+107. The debate rages on: is PL/I Bachtrian or Dromedary?
+51. Bringing computers into the home won't change either one, but may revitalize the corner saloon.
+98. In computing, the mean time to failure keeps getting shorter.
+48. The best book on programming for the layman is "Alice in Wonderland"; but that's because it's the best book on anything for the layman.
+111. Why did the Roman Empire collapse? What is Latin for office automation?
+35. Everyone can be taught to sculpt: Michelangelo would have had to be taught not to. So it is with great programmers.
+72. An adequate bootstrap is a contradiction in terms.
+74. Is it possible that software is not like anything else, that it is meant to be discarded: that the whole point is to see it as a soap bubble?
+19. A language that doesn't affect the way you think about programming, is not worth knowing.
+55. A LISP programmer knows the value of everything, but the cost of nothing.
+92. The computer is the ultimate polluter: its feces are indistinguishable from the food it produces.
+26. There will always be things we wish to say in our programs that in all known languages can only be said poorly.
+10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.
+36. The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics.
+97. When a professor insists computer science is X but not Y, have compassion for his graduate students.
+29. For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.
+58. Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.
+36. The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics.
+39. Re graphics: A picture is worth 10K words - but only those to describe the picture. Hardly any sets of 10K words can be adequately described with pictures.
+10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.
+118. If you can imagine a society in which the computer-robot is the only menial, you can imagine anything.
+78. If your computer speaks English, it was probably made in Japan.
+58. Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.
+113. The only constructive theory connecting neuroscience and psychology will arise from the study of software.
+70. Over the centuries the Indians developed sign language for communicating phenomena of interest. Programmers from
+9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+62. In computing, invariants are ephemeral.
+85. Though the Chinese should adore APL, it's FORTRAN they put their money on.
+56. Software is under a constant tension. Being symbolic it is arbitrarily perfectible; but also it is arbitrarily changeable.
+73. It is not a language's weakness but its strengths that control the gradient of its change: Alas, a language never escapes its embryonic sac.
+39. Re graphics: A picture is worth 10K words - but only those to describe the picture. Hardly any sets of 10K words can be adequately described with pictures.
+33. The eleventh commandment was "Thou Shalt Compute" or "Thou Shalt Not Compute" - I forget which.
+36. The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics.
+62. In computing, invariants are ephemeral.
+91. The computer reminds one of Lon Chaney -- it is the machine of a thousand faces.
+17. If a listener nods his head when you're explaining your program, wake him up.
+13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
+91. The computer reminds one of Lon Chaney -- it is the machine of a thousand faces.
+14. In the long run every program becomes rococo - then rubble.
+93. When someone says "I want a programming language in which I need only say what I wish done," give him a lollipop.
+25. One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.
+41. Some programming languages manage to absorb change, but withstand progress.
+7. It is easier to write an incorrect program than understand a correct one.
+106. It's difficult to extract sense from strings, but they're the only communication coin we can count on.
+88. It is not the computer's fault that Maxwell's equations are not adequate to design the electric motor.
+111. Why did the Roman Empire collapse? What is Latin for office automation?
+98. In computing, the mean time to failure keeps getting shorter.
+62. In computing, invariants are ephemeral.
+1. One man's constant is another man's variable.
+.
