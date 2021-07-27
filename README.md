@@ -1,8 +1,8 @@
 # ProgettoAPI2020
 
-Description of the project can be found [here](https://github.com/alessandrozito98/ProgettoAPI2020/blob/master/Specific%20Documents/ProvaFinale2020.pdf).
+Description of the project can be found [here](https://github.com/pablogiaccaglia/Progetto-API-2020/blob/main/Specific%20Documents/ProvaFinale2020.pdf).
 
-Specific document can be found [here](https://github.com/alessandrozito98/ProgettoAPI2020/blob/master/Specific%20Documents/ProvaFinale2020specifica.pdf).
+Specific document can be found [here](https://github.com/pablogiaccaglia/Progetto-API-2020/blob/main/Specific%20Documents/ProvaFinale2020specifica.pdf).
 
 ## edU, or ed multiplies Undo 
 *This project has been developed as part of the "Algoritmi e Principi dell'Informatica" course at [Politecnico di Milano](https://www.polimi.it/).* It has been evaluated "30/30L".
